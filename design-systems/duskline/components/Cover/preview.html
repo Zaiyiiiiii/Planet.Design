@@ -1,0 +1,60 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>PLANET</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background: linear-gradient(to bottom, rgba(255,138,76,0) 40%, rgba(255,111,142,0.12) 78%, rgba(217,163,92,0.26) 100%), var(--void); color:var(--ink); font-family:var(--font-serif); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .brass { fill:var(--brass); }
+  .tint { fill:var(--brass-soft); }
+  .signal { fill:var(--signal); } .sign { fill:var(--sign); } .moss { fill:var(--moss); } .rain { stroke:var(--signal); stroke-width:1; opacity:.35; }
+  .neon { fill:var(--neon); }
+  .hole { fill:var(--void); }
+  .orbit { fill:none; stroke:var(--ink); stroke-width:1.5; }
+  .sat { fill:var(--ink); }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:92px; line-height:1; letter-spacing:.01em; color:var(--brass); font-weight:400; font-synthesis:none; }
+  .tag { margin:var(--space-2) 0 0 4px; font-size:14px; line-height:22px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      brass 128×256 slab bled off the top (the brand, largest) · brass-soft 96×160 tint · survey 200×216 bleeding off the right edge · neon 64×24 once (the action colour, kept small) · moss 48×24 once · six signal-cyan rain strokes across the survey block — about 35% of 960×288
+  arrangement one tall brass slab with satellites; bottoms on one line space-6 above the edge; space-2 gutters; square corners (radius-0: this system cuts, never rounds)
+  pattern     literal motif, from "the ring is every satellite": four orbits (space-8 + space-6 steps) around a void disc cut from the slab, five satellites (space-3 discs, radius-ring) riding them
+  scales      sides in space-4 multiples; gutters space-2; orbit radii 56/88/120/152; disc radius-ring
+-->
+<rect class="brass" x="32" y="-16" width="128" height="272"/>
+<rect class="tint" x="168" y="96" width="96" height="160"/>
+<rect class="signal" x="272" y="40" width="216" height="216"/>
+<rect class="neon" x="168" y="64" width="64" height="24"/>
+<rect class="moss" x="424" y="232" width="48" height="24"/>
+<circle class="sign" cx="448" cy="196" r="16"/>
+<path class="rain" d="M300 0l-12 40M332 0l-12 40M364 0l-12 40M396 0l-12 40M428 0l-12 40M460 0l-12 40"/>
+<circle class="hole" cx="96" cy="112" r="32"/>
+<circle class="orbit" cx="96" cy="112" r="56"/>
+<circle class="orbit" cx="96" cy="112" r="88"/>
+<circle class="orbit" cx="96" cy="112" r="120"/>
+<circle class="orbit" cx="96" cy="112" r="152"/>
+<circle class="sat" cx="152" cy="112" r="6"/>
+<circle class="sat" cx="158" cy="174" r="6"/>
+<circle class="sat" cx="205" cy="61" r="6"/>
+<circle class="sat" cx="223" cy="195" r="6"/>
+<circle class="sat" cx="244" cy="78" r="6"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">PLANET</h1>
+<p class="tag">晨昏线上的设计系统。西部的夕阳，八十年代的跑马灯，高架桥下的霓虹。</p>
+</div>
+</div>
+</body>
+</html>

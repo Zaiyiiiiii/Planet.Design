@@ -1,0 +1,12 @@
+<!-- @dsCard group="警报 Alerts" height=330 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Hazard — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Hazard, { level: 'critical', title: '陨石雨 METEOR SHOWER', actions: h(React.Fragment, null, h(P.Button, { variant: 'primary' }, '转入掩体'), h(P.Button, null, '查看轨迹')) }, '预计 38 分钟后抵达北矿道上方。所有地表作业停止，卫星节点将自动备份到井下。')));
+</script>
+</body>
+</html>

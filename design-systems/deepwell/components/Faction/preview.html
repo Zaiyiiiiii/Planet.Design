@@ -1,0 +1,12 @@
+<!-- @dsCard group="身份 Identity" height=100 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Faction — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, ['agency','survey','union','sunward','choir','exchange','couriers','consulate'].map(function (k) { return h(P.Faction, { key: k, faction: k }); })));
+</script>
+</body>
+</html>

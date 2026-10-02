@@ -1,0 +1,12 @@
+<!-- @dsCard group="状态 Status" height=96 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Stamp — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Stamp, null, '待查 Pending'), h(P.Stamp, { tone: 'ember', tilt: true }, '机密 Classified'), h(P.Stamp, { tone: 'moss' }, '结案 Closed'), h(P.Stamp, { tone: 'survey' }, '已登记 Filed'), h(P.Stamp, { tone: 'neon' }, '黑市 Market'), h(P.Stamp, { tone: 'signal' }, '线人 Informant')));
+</script>
+</body>
+</html>

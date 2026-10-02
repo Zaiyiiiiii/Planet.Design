@@ -1,0 +1,12 @@
+<!-- @dsCard group="昏线特色 Duskline" height=300 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>NeonSign — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.NeonSign, { text: 'OPEN', sub: '24 小时', horizontal: true, flicker: true }), h(P.NeonSign, { text: '当铺', sub: 'PAWN', tone: 'sign' }), h(P.NeonSign, { text: '修旧机', sub: 'REPAIR', tone: 'signal' }), h(P.NeonSign, { text: '酒馆', sub: 'SALOON', tone: 'brass' })));
+</script>
+</body>
+</html>

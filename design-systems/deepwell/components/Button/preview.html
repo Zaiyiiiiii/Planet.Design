@@ -1,0 +1,12 @@
+<!-- @dsCard group="操作 Actions" height=110 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Button, { variant: 'primary' }, '开始观测 Observe'), h(P.Button, null, '日志 Log'), h(P.Button, { variant: 'danger' }, '紧急泄压 Vent'), h(P.Button, { variant: 'ghost' }, '详情'), h(P.Button, { size: 'sm' }, '小号'), h(P.Button, { variant: 'primary', size: 'lg' }, '开馆 Open'), h(P.Button, { disabled: true }, '闭馆 Closed')));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=210 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextField — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.TextField, { label: '井号 Shaft ID', placeholder: 'SH-07', hint: '两位数字，见井口铭牌。' }), h(P.TextField, { label: '目标温度 Target °C', defaultValue: '900', error: '超过井壁上限 640°C。' })));
+</script>
+</body>
+</html>

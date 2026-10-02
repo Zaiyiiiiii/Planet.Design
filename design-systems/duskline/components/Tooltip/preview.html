@@ -1,0 +1,12 @@
+<!-- @dsCard group="反馈 Feedback" height=120 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Tooltip — preview</title></head>
+<body>
+<div id="root" class="pl-row" style="padding-top:64px"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h('span', { style: { display: 'inline-block', width: 8 } }), h(P.Tooltip, { label: '立即同步', open: true }, h(P.Button, { size: 'sm', 'aria-label': '立即同步', icon: h(P.Icon, { name: 'sync', size: 18 }) })), h(P.Tooltip, { label: '移除这颗卫星', side: 'bottom' }, h(P.Button, { size: 'sm', 'aria-label': '移除', icon: h(P.Icon, { name: 'close', size: 18 }) }))));
+</script>
+</body>
+</html>

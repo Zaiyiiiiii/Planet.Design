@@ -1,0 +1,60 @@
+/* Generated from tokens.json — PLANET design tokens. */
+
+@font-face { font-family: 'Unbounded'; src: url('fonts/Unbounded-Latin-Variable.woff2') format('woff2'); font-weight: 200 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Figtree'; src: url('fonts/Figtree-Latin-Variable.woff2') format('woff2'); font-weight: 300 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Figtree'; src: url('fonts/Figtree-Latin-Variable-Italic.woff2') format('woff2'); font-weight: 300 900; font-style: italic; font-display: swap; }
+
+:root, [data-theme="day"] {
+  --pearl: #eef2f6;
+  --glass: rgba(255,255,255,0.62);
+  --glass-strong: rgba(255,255,255,0.85);
+  --glass-edge: rgba(255,255,255,0.9);
+  --hairline: #d3dbe5;
+  --line-strong: #76849a;
+  --ink: #14213d;
+  --ink-muted: #4b5870;
+  --corona: #f2b43c;
+  --on-corona: #14213d;
+  --corona-ink: #8a4a00;
+  --corona-soft: #fbe7bd;
+  --lagoon: #0b6e78;
+  --lagoon-soft: #d6eef0;
+  --bloom: #1d7348;
+  --bloom-soft: #d9efe1;
+  --flare: #b3261e;
+  --flare-soft: #f8dcd8;
+  --space: #0e1830;
+  --on-space: #f3f5f8;
+  --focus-ring: var(--lagoon);
+  --link: var(--lagoon);
+  --faction-agency: #8a5a0a;
+  --faction-survey: #22457e;
+  --faction-union: #b0301f;
+  --faction-sunward: #a84510;
+  --faction-choir: #2f6b1c;
+  --faction-exchange: #8a2a3b;
+  --faction-couriers: #0d6358;
+  --faction-consulate: #285f75;
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-float: inset 0 1px 0 0 rgba(255,255,255,0.9), 0 18px 40px -16px rgba(20,33,61,0.28);
+  --shadow-glow: 0 10px 28px -8px rgba(242,180,60,0.65);
+  --blur-glass: 20px;
+  --font-display: Unbounded, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-text: Figtree, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}

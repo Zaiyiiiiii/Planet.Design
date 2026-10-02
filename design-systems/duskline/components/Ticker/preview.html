@@ -1,0 +1,12 @@
+<!-- @dsCard group="数据 Data" height=72 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Ticker — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.Ticker, { label: '行情 LIVE', items: [ { sym: 'SALT', name: '向阳盐业', price: '412.08', delta: 2.4 }, { sym: 'TUBE', name: '灯管电力', price: '88.10', delta: -1.1 }, { sym: 'RING', name: '环线电车', price: '1,204.50', delta: 0.6 }, { sym: 'LOCK', name: '开舱日盘口', price: '17.33', delta: 6.8 }, { sym: 'PIER', name: '领事码头', price: '240.00', delta: -3.2 } ] }));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Select — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Select, { label: '同步频率 Sync', defaultValue: '5m', hint: '越频繁，旧设备越费电。', options: [ { value: '5m', label: '每 5 分钟' }, { value: '1h', label: '每小时' }, { value: '1d', label: '每天' }, { value: 'manual', label: '手动' } ] }), h(P.Select, { label: '备份到', defaultValue: '', error: '先选一颗卫星。', options: [ { value: '', label: '请选择' }, { value: 'tab', label: '书房的旧平板' }, { value: 'rx7', label: '开发板 RX-7' } ] })));
+</script>
+</body>
+</html>

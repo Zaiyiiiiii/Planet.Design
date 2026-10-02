@@ -1,0 +1,12 @@
+<!-- @dsCard group="导航 Navigation" height=100 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TopBar — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.TopBar, { appName: 'PLANET', links: [ { label: '卫星', current: true }, { label: '存储' }, { label: '音乐' }, { label: '设置' } ], end: h(P.Button, { size: 'sm', variant: 'primary' }, '接入') }));
+</script>
+</body>
+</html>

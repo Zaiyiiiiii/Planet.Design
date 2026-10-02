@@ -1,0 +1,12 @@
+<!-- @dsCard group="声音 Voice" height=360 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Notice — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Notice, { speaker: 'marge' }, '七号井的电今晚会断两小时。灯不灭，账就没清——但今晚得灭一会儿。'), h(P.Notice, { speaker: 'hattie' }, '它今天心跳慢了。你也听见了，对吧？')));
+</script>
+</body>
+</html>

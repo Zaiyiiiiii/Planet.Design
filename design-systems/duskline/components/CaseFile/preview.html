@@ -1,0 +1,12 @@
+<!-- @dsCard group="内容 Content" height=280 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CaseFile — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.CaseFile, { caseNo: 'CASE 0081', title: '迟到的信', meta: 'AL 81 · 领事码头 · 负责人 伊莱·范', stamp: h(P.Stamp, { tone: 'ember', tilt: true }, '机密 Classified') }, h('p', null, '领事说她收到了新指示。信封上的邮戳是 AL 41，大熄灯那一年。'), h(P.Button, { size: 'sm' }, '调阅全文 Read file')));
+</script>
+</body>
+</html>

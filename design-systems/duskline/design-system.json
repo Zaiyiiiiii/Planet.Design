@@ -1,0 +1,138 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-30T15:30:00Z"
+ },
+ "title": "PLANET · 昏线 Duskline",
+ "namespace": "Planet",
+ "libraries": [
+  {
+   "name": "react",
+   "version": "18"
+  },
+  {
+   "name": "react-dom",
+   "version": "18"
+  }
+ ],
+ "sections": {},
+ "groups": [
+  "Logos",
+  "Icons"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "planet-lockup-brass.svg",
+    "planet-lockup-ink.svg",
+    "planet-mark-brass.svg",
+    "planet-mark-ink.svg"
+   ],
+   "files": {
+    "planet-lockup-brass.svg": {
+     "name": "planet-lockup-brass.svg",
+     "blob": "a0784d3fca92a9c3dc3821a37bf7493c",
+     "size": 1716,
+     "type": "image/svg+xml"
+    },
+    "planet-lockup-ink.svg": {
+     "name": "planet-lockup-ink.svg",
+     "blob": "bdaeaf9870d971820cc715e852bfcee5",
+     "size": 1716,
+     "type": "image/svg+xml"
+    },
+    "planet-mark-brass.svg": {
+     "name": "planet-mark-brass.svg",
+     "blob": "b022b87b441d3f18a4449b35dec9025d",
+     "size": 851,
+     "type": "image/svg+xml"
+    },
+    "planet-mark-ink.svg": {
+     "name": "planet-mark-ink.svg",
+     "blob": "12028d26d149aa17ca28879cdaca082d",
+     "size": 851,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Icons": {
+   "name": "Icons",
+   "tile": "s",
+   "order": [
+    "magnifier.svg",
+    "dossier.svg",
+    "planet.svg",
+    "key.svg",
+    "eye.svg",
+    "badge.svg",
+    "orbit-up.svg",
+    "orbit-down.svg"
+   ],
+   "files": {
+    "magnifier.svg": {
+     "name": "magnifier.svg",
+     "blob": "fc91c94b313eff7e0c43a0c17c54d17e",
+     "size": 279,
+     "type": "image/svg+xml"
+    },
+    "dossier.svg": {
+     "name": "dossier.svg",
+     "blob": "8379c4f2780f046414c4ba17029e7f9e",
+     "size": 237,
+     "type": "image/svg+xml"
+    },
+    "planet.svg": {
+     "name": "planet.svg",
+     "blob": "9796cadcf410a2c5930199927888416d",
+     "size": 313,
+     "type": "image/svg+xml"
+    },
+    "key.svg": {
+     "name": "key.svg",
+     "blob": "8c1416cb5fb46b3ffbd3fc0896e4e373",
+     "size": 253,
+     "type": "image/svg+xml"
+    },
+    "eye.svg": {
+     "name": "eye.svg",
+     "blob": "9d7bc0c4b215a4f3dae730000f4aad56",
+     "size": 257,
+     "type": "image/svg+xml"
+    },
+    "badge.svg": {
+     "name": "badge.svg",
+     "blob": "0dffef45c08c5d83ca518f4f92187ece",
+     "size": 375,
+     "type": "image/svg+xml"
+    },
+    "orbit-up.svg": {
+     "name": "orbit-up.svg",
+     "blob": "4bb1c2943042ad27044eca5936818460",
+     "size": 207,
+     "type": "image/svg+xml"
+    },
+    "orbit-down.svg": {
+     "name": "orbit-down.svg",
+     "blob": "70d8f5757584fd165b6f48d4c65902a7",
+     "size": 207,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Claude",
+  "at": "2026-10-01T17:30:00Z",
+  "via": "Claude chat",
+  "note": "新助手：卡西 Cassie（戴牛仔帽的亡命磁带，卷轴是眼睛，出错时卡带吐出来）。"
+ }
+}

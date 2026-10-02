@@ -1,0 +1,12 @@
+<!-- @dsCard group="昏线特色 Duskline" height=280 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Stall — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Stall, { item: '旧闹钟（能跑卫星）', price: '¤ 38', was: '¤ 60', note: '老板说：雨大就再便宜点。', stamp: h(P.Stamp, { tone: 'neon' }, '黑市') }), h(P.Stall, { item: '暮光苔一罐', price: '¤ 4', note: '夜里当灯用，三天换一次水。', tilt: 3 }), h(P.Stall, { item: '方舟测绘旧档案袋', price: '面议', note: '不问来路。', tilt: -4, stamp: h(P.Stamp, { tone: 'ember' }, '机密') })));
+</script>
+</body>
+</html>

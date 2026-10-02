@@ -1,0 +1,52 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-30T16:10:00Z"
+ },
+ "title": "PLANET · 深井 Deepwell",
+ "namespace": "PlanetDeepwell",
+ "libraries": [
+  {
+   "name": "react",
+   "version": "18"
+  },
+  {
+   "name": "react-dom",
+   "version": "18"
+  }
+ ],
+ "sections": {},
+ "groups": [
+  "Logos"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "planet-mark-deepwell.svg"
+   ],
+   "files": {
+    "planet-mark-deepwell.svg": {
+     "name": "planet-mark-deepwell.svg",
+     "blob": "b8714f39b98f3080c3ed22dc0e08270d",
+     "size": 851,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Claude",
+  "at": "2026-10-02T09:50:00Z",
+  "via": "Claude chat",
+  "note": "灯芯眼镜恢复原尺寸，仍随火苗一起动；眼睛居中于镜片，眉毛在镜框上、嘴在镜框下。"
+ }
+}

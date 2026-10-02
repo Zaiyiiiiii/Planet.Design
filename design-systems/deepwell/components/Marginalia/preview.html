@@ -1,0 +1,12 @@
+<!-- @dsCard group="深井特色 Deepwell" height=300 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Marginalia — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 240px', gap: 32, alignItems: 'start' } }, h(P.Reading, null, h('p', null, '极夜漫长，灯油珍贵，于是每一盏灯下都要做最值得做的事：读书、写诗、作曲、画蓝图、造钟、算轨道。'), h('p', null, '听星塔的接收机不需要人工制冷——夜面本身就够冷。母星的信在对星季到达，先在这里抄一份，再转往领事码头。')), h(P.Marginalia, { by: '宋朝雾' }, '第二段是哈蒂修女口述的。她说接收机"冷得刚刚好"，我记下来了。')));
+</script>
+</body>
+</html>

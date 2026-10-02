@@ -1,0 +1,12 @@
+<!-- @dsCard group="图标 Icons" height=260 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Icon — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'pl-iconset' }, ["search", "folder", "satellite", "key", "eye", "check", "close", "plus", "upload", "download", "alert", "sync", "lock", "sliders"].map(function (n) { return h('figure', { key: n }, h(P.Icon, { name: n, size: 28 }), h('figcaption', null, n)); })));
+</script>
+</body>
+</html>

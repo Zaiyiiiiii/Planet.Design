@@ -1,0 +1,12 @@
+<!-- @dsCard group="声音 Voice" height=420 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Avatar — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'pl-cast' }, [["locket", "小锁", "卫星"], ["eli", "伊莱·范", "侦探社"], ["zhaowu", "宋朝雾", "侦探社"], ["ophelia", "奥菲莉亚·墨", "测绘局"], ["marge", "玛格·奥瑞", "霓虹工会"], ["tally", "账房", "交易所"], ["tide", "潮先生", "交易所"], ["hattie", "哈蒂修女", "回声教团"], ["kite", "小飞", "航标鸟"], ["august", "奥古斯特·白", "向阳会"], ["edna", "艾德娜·凯恩", "母星领事馆"]].map(function (c) { return h('figure', { key: c[0] }, h(P.Avatar, { who: c[0], size: 96 }), h('figcaption', null, h('strong', null, c[1]), h('br'), h('span', { style: { color: 'var(--ink-muted)' } }, c[2]))); })));
+</script>
+</body>
+</html>

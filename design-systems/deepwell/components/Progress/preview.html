@@ -1,0 +1,12 @@
+<!-- @dsCard group="数据 Data" height=230 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Progress — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Progress, { label: '同步到书房的旧平板', value: 64 }), h(P.Progress, { label: '备份聊天记录', value: 100, tone: 'good', valueText: '完成' }), h(P.Progress, { label: '上传到深井节点', value: 23, tone: 'bad', valueText: '中断 23%' })));
+</script>
+</body>
+</html>

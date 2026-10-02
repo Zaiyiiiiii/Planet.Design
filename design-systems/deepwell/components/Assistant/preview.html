@@ -1,0 +1,12 @@
+<!-- @dsCard group="助手 Assistant" height=720 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Assistant — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render((function () { var SATS = [ { id: 1, name: '旧闹钟', status: 'ok' }, { id: 2, name: '书房的旧平板', status: 'done' }, { id: 3, name: '开发板 RX-7', status: 'busy' }, { id: 4, name: '停走的手表', status: 'sleep' }, { id: 5, name: '聊天备份', status: 'error' } ]; return h('div', { style: { padding: 24 } }, h(P.Assistant, { state: 'thinking', level: 34, satellites: SATS, message: '聊天备份那只飞蛾翅膀烧着了。¹ 我正在把它最近的副本誊到图书馆副本机上，书页不会丢。灯油只剩三成，请省着点。', footnote: '¹ 最后一次心跳在 3 分 12 秒前。所谓"飞蛾扑火"，大抵如此。', actions: h(React.Fragment, null, h(P.Button, { size: 'sm', variant: 'primary' }, '重新连接'), h(P.Button, { size: 'sm' }, '查看日志')) }), h('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 18, marginTop: 28 } }, [['idle','待命'],['listening','倾听'],['thinking','思考'],['success','成功'],['error','出错'],['sleep','睡着']].map(function (s) { return h('figure', { key: s[0], style: { margin: 0, textAlign: 'center' } }, h(P.Assistant, { compact: true, size: 132, state: s[0], satellites: SATS, level: 72 }), h('figcaption', { style: { fontSize: 13, opacity: .8, marginTop: 4 } }, s[1])); }))); })());
+</script>
+</body>
+</html>

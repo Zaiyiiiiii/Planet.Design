@@ -1,0 +1,12 @@
+<!-- @dsCard group="助手 Assistant" height=720 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Assistant — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render((function () { var SATS = [ { id: 1, name: '旧闹钟', status: 'ok' }, { id: 2, name: '书房的旧平板', status: 'done' }, { id: 3, name: '开发板 RX-7', status: 'busy' }, { id: 4, name: '停走的手表', status: 'sleep' }, { id: 5, name: '聊天备份', status: 'error' } ]; return h('div', { style: { padding: 24 } }, h(P.Assistant, { state: 'success', satellites: SATS, message: '书房的旧平板刚刚同步好了。聊天备份有点闹脾气，我已经轻轻安抚过它——别担心，阳光会处理的。', actions: h(React.Fragment, null, h(P.Button, { size: 'sm', variant: 'primary' }, '去看看'), h(P.Button, { size: 'sm', variant: 'ghost' }, '稍后')) }), h('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 18, marginTop: 28 } }, [['idle','待命'],['listening','倾听'],['thinking','思考'],['success','成功'],['error','出错'],['sleep','睡着']].map(function (s) { return h('figure', { key: s[0], style: { margin: 0, textAlign: 'center' } }, h(P.Assistant, { compact: true, size: 132, state: s[0], satellites: SATS }), h('figcaption', { style: { fontSize: 13, opacity: .8, marginTop: 4 } }, s[1])); }))); })());
+</script>
+</body>
+</html>

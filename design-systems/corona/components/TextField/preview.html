@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextField — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.TextField, { label: '设备名称 Device name', placeholder: '例如：书房的旧平板', hint: '只有你能看到这个名字。' }), h(P.TextField, { label: '同步间隔 Sync interval', defaultValue: '0', error: '间隔至少 1 分钟。' })));
+</script>
+</body>
+</html>

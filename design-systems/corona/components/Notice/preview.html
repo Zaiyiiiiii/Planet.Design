@@ -1,0 +1,12 @@
+<!-- @dsCard group="声音 Voice" height=380 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Notice — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Notice, { speaker: 'august' }, '您的穹顶今日满能运行。日光底下没有秘密，只有价格——而今天它免费。'), h(P.Notice, { speaker: 'tally', urgent: true, actions: h(P.Button, { size: 'sm' }, '重试') }, '同步未完成。误差 1 次。已重新排队，预计 3 秒。')));
+</script>
+</body>
+</html>

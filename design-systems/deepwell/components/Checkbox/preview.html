@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=170 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Checkbox — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Checkbox, { label: '照片', defaultChecked: true }), h(P.Checkbox, { label: '音乐' }), h(P.Checkbox, { label: '聊天记录', defaultChecked: true }), h(P.Checkbox, { label: '系统镜像', disabled: true })));
+</script>
+</body>
+</html>

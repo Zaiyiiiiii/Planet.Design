@@ -1,0 +1,12 @@
+<!-- @dsCard group="内容 Content" height=560 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>List — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render((function () { var S = function (t, s) { return h(P.Lamp, { tone: t }, s); }; return h(React.Fragment, null, h(P.List, { ariaLabel: '消息', items: [ { id: 1, avatar: 'kite', title: '小飞', subtitle: '三封新消息，刚从屋顶扔下来的。', meta: '3 分钟前', href: '#' }, { id: 2, avatar: 'tally', title: '账房', subtitle: '同步完成。误差 0.00。', meta: '1 小时前', href: '#' }, { id: 3, avatar: 'ophelia', title: '奥菲莉亚·墨', subtitle: '已盖章。', meta: '昨天', href: '#' } ] }), h(P.List, { ariaLabel: '设备', items: [ { id: 'a', icon: 'satellite', title: '旧闹钟', subtitle: '床头 · 12 GB', trailing: S('patina', '在线') }, { id: 'b', icon: 'folder', title: '书房的旧平板', subtitle: '书房 · 212 GB', trailing: S('frost', '同步中') }, { id: 'c', icon: 'lock', title: '停走的手表', subtitle: '抽屉 · 2 GB', trailing: S('alarm', '离线') } ] })); })());
+</script>
+</body>
+</html>

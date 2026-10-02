@@ -1,0 +1,8 @@
+# Faction 派系标签
+
+深井版：派系色描边的铸铁铭牌，英文大写。
+
+- 标出内容属于昏线城八股势力中的哪一股：徽记加名称，派系色。
+- 派系色只用于归属标记，不做装饰。`lang="en"` 显示英文名。
+
+**你需要提供**：`faction`（agency | survey | union | sunward | choir | exchange | couriers | consulate），可选 `lang`、`children`。

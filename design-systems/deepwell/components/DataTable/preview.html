@@ -1,0 +1,12 @@
+<!-- @dsCard group="数据 Data" height=320 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>DataTable — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render((function () { var S = function (t, s) { return h(P.Lamp, { tone: t }, s); }; return h(P.DataTable, { caption: '我的卫星', columns: [ { key: 'name', label: '设备' }, { key: 'where', label: '位置' }, { key: 'state', label: '状态' }, { key: 'size', label: '存储', align: 'right', mono: true } ], rows: [ { id: 1, name: '旧闹钟', where: '床头', state: S('patina', '在线'), size: '12 GB' }, { id: 2, name: '书房的旧平板', where: '书房', state: S('frost', '同步中'), size: '212 GB' }, { id: 3, name: '开发板 RX-7', where: '客厅', state: S('patina', '在线'), size: '64 GB' }, { id: 4, name: '停走的手表', where: '抽屉', state: S('alarm', '离线'), size: '2 GB' } ] }); })());
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="导航 Navigation" height=440 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Sidebar — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.Sidebar, { title: 'PLANET', sections: [ { label: '我的卫星', items: [ { label: '全部设备', icon: 'satellite', current: true, count: 7 }, { label: '存储', icon: 'folder', count: 3 }, { label: '同步', icon: 'sync' } ] }, { label: '服务', items: [ { label: '网盘', icon: 'download' }, { label: '聊天备份', icon: 'lock' }, { label: '设置', icon: 'sliders' } ] } ], footer: '旧闹钟 · 第三枚章' }));
+</script>
+</body>
+</html>

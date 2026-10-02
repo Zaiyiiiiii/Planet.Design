@@ -1,0 +1,12 @@
+<!-- @dsCard group="深井特色 Deepwell" height=260 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Orrery — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.Orrery, { label: '我的卫星 · 七颗', nodes: [ { name: '旧闹钟', online: true }, { name: '书房的旧平板', online: true, note: '同步中' }, { name: '开发板 RX-7', online: true }, { name: '停走的手表', online: false }, { name: '听星塔中继', online: true, note: '对星季' }, { name: '图书馆副本机', online: true }, { name: '钟表匠的旧台式机', online: false } ] }));
+</script>
+</body>
+</html>

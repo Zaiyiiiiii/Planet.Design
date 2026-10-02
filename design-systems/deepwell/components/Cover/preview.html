@@ -1,0 +1,47 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>DEEPWELL</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background: linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 24px 24px, var(--night); color:var(--ink); font-family:var(--font-text); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .copper { fill:var(--copper); } .frost { fill:var(--frost); } .iron { fill:var(--iron-raised); } .patina { fill:var(--patina); } .star { fill:var(--star); }
+  .orbit { fill:none; stroke:var(--brass); stroke-width:1; }
+  .tick { stroke:var(--brass); stroke-width:1; }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-plate); font-size:64px; line-height:1; font-weight:600; letter-spacing:.06em; color:var(--copper); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:16px; line-height:24px; font-style:italic; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      iron-raised 216×240 plate (the observatory wall) · copper 104×104 disc (the planet, the action colour) · frost 160×40 band · patina 40×40 once · five star points — about 40% of 960×288
+  arrangement an orrery: the copper planet on the plate with three brass orbits and a graduated outer ring; the frost band and patina square sit to the right on the same baseline, space-4 gutters
+  pattern     literal motif, from "observatory, instruments, blueprint": a 24px blueprint grid (grid token) under everything, a 5° tick ring around the orbits
+  scales      orbit radii 64/88/112 (space-7 + space-4 steps); tick ring 124; gutters space-4; sides in space-2 multiples
+-->
+<rect class="iron" x="24" y="24" width="216" height="240"/>
+<circle class="orbit" cx="132" cy="144" r="64"/><circle class="orbit" cx="132" cy="144" r="88"/><circle class="orbit" cx="132" cy="144" r="112"/>
+<g><line class="tick" x1="256.0" y1="144.0" x2="248.0" y2="144.0"/><line class="tick" x1="255.5" y1="154.8" x2="251.5" y2="154.5"/><line class="tick" x1="254.1" y1="165.5" x2="250.2" y2="164.8"/><line class="tick" x1="251.8" y1="176.1" x2="247.9" y2="175.1"/><line class="tick" x1="248.5" y1="186.4" x2="244.8" y2="185.0"/><line class="tick" x1="244.4" y1="196.4" x2="240.8" y2="194.7"/><line class="tick" x1="239.4" y1="206.0" x2="232.5" y2="202.0"/><line class="tick" x1="233.6" y1="215.1" x2="230.3" y2="212.8"/><line class="tick" x1="227.0" y1="223.7" x2="223.9" y2="221.1"/><line class="tick" x1="219.7" y1="231.7" x2="216.9" y2="228.9"/><line class="tick" x1="211.7" y1="239.0" x2="209.1" y2="235.9"/><line class="tick" x1="203.1" y1="245.6" x2="200.8" y2="242.3"/><line class="tick" x1="194.0" y1="251.4" x2="190.0" y2="244.5"/><line class="tick" x1="184.4" y1="256.4" x2="182.7" y2="252.8"/><line class="tick" x1="174.4" y1="260.5" x2="173.0" y2="256.8"/><line class="tick" x1="164.1" y1="263.8" x2="163.1" y2="259.9"/><line class="tick" x1="153.5" y1="266.1" x2="152.8" y2="262.2"/><line class="tick" x1="142.8" y1="267.5" x2="142.5" y2="263.5"/><line class="tick" x1="132.0" y1="268.0" x2="132.0" y2="260.0"/><line class="tick" x1="121.2" y1="267.5" x2="121.5" y2="263.5"/><line class="tick" x1="110.5" y1="266.1" x2="111.2" y2="262.2"/><line class="tick" x1="99.9" y1="263.8" x2="100.9" y2="259.9"/><line class="tick" x1="89.6" y1="260.5" x2="91.0" y2="256.8"/><line class="tick" x1="79.6" y1="256.4" x2="81.3" y2="252.8"/><line class="tick" x1="70.0" y1="251.4" x2="74.0" y2="244.5"/><line class="tick" x1="60.9" y1="245.6" x2="63.2" y2="242.3"/><line class="tick" x1="52.3" y1="239.0" x2="54.9" y2="235.9"/><line class="tick" x1="44.3" y1="231.7" x2="47.1" y2="228.9"/><line class="tick" x1="37.0" y1="223.7" x2="40.1" y2="221.1"/><line class="tick" x1="30.4" y1="215.1" x2="33.7" y2="212.8"/><line class="tick" x1="24.6" y1="206.0" x2="31.5" y2="202.0"/><line class="tick" x1="19.6" y1="196.4" x2="23.2" y2="194.7"/><line class="tick" x1="15.5" y1="186.4" x2="19.2" y2="185.0"/><line class="tick" x1="12.2" y1="176.1" x2="16.1" y2="175.1"/><line class="tick" x1="9.9" y1="165.5" x2="13.8" y2="164.8"/><line class="tick" x1="8.5" y1="154.8" x2="12.5" y2="154.5"/><line class="tick" x1="8.0" y1="144.0" x2="16.0" y2="144.0"/><line class="tick" x1="8.5" y1="133.2" x2="12.5" y2="133.5"/><line class="tick" x1="9.9" y1="122.5" x2="13.8" y2="123.2"/><line class="tick" x1="12.2" y1="111.9" x2="16.1" y2="112.9"/><line class="tick" x1="15.5" y1="101.6" x2="19.2" y2="103.0"/><line class="tick" x1="19.6" y1="91.6" x2="23.2" y2="93.3"/><line class="tick" x1="24.6" y1="82.0" x2="31.5" y2="86.0"/><line class="tick" x1="30.4" y1="72.9" x2="33.7" y2="75.2"/><line class="tick" x1="37.0" y1="64.3" x2="40.1" y2="66.9"/><line class="tick" x1="44.3" y1="56.3" x2="47.1" y2="59.1"/><line class="tick" x1="52.3" y1="49.0" x2="54.9" y2="52.1"/><line class="tick" x1="60.9" y1="42.4" x2="63.2" y2="45.7"/><line class="tick" x1="70.0" y1="36.6" x2="74.0" y2="43.5"/><line class="tick" x1="79.6" y1="31.6" x2="81.3" y2="35.2"/><line class="tick" x1="89.6" y1="27.5" x2="91.0" y2="31.2"/><line class="tick" x1="99.9" y1="24.2" x2="100.9" y2="28.1"/><line class="tick" x1="110.5" y1="21.9" x2="111.2" y2="25.8"/><line class="tick" x1="121.2" y1="20.5" x2="121.5" y2="24.5"/><line class="tick" x1="132.0" y1="20.0" x2="132.0" y2="28.0"/><line class="tick" x1="142.8" y1="20.5" x2="142.5" y2="24.5"/><line class="tick" x1="153.5" y1="21.9" x2="152.8" y2="25.8"/><line class="tick" x1="164.1" y1="24.2" x2="163.1" y2="28.1"/><line class="tick" x1="174.4" y1="27.5" x2="173.0" y2="31.2"/><line class="tick" x1="184.4" y1="31.6" x2="182.7" y2="35.2"/><line class="tick" x1="194.0" y1="36.6" x2="190.0" y2="43.5"/><line class="tick" x1="203.1" y1="42.4" x2="200.8" y2="45.7"/><line class="tick" x1="211.7" y1="49.0" x2="209.1" y2="52.1"/><line class="tick" x1="219.7" y1="56.3" x2="216.9" y2="59.1"/><line class="tick" x1="227.0" y1="64.3" x2="223.9" y2="66.9"/><line class="tick" x1="233.6" y1="72.9" x2="230.3" y2="75.2"/><line class="tick" x1="239.4" y1="82.0" x2="232.5" y2="86.0"/><line class="tick" x1="244.4" y1="91.6" x2="240.8" y2="93.3"/><line class="tick" x1="248.5" y1="101.6" x2="244.8" y2="103.0"/><line class="tick" x1="251.8" y1="111.9" x2="247.9" y2="112.9"/><line class="tick" x1="254.1" y1="122.5" x2="250.2" y2="123.2"/><line class="tick" x1="255.5" y1="133.2" x2="251.5" y2="133.5"/></g>
+<circle class="copper" cx="132" cy="144" r="40"/>
+<circle class="patina" cx="196" cy="144" r="7"/><circle class="star" cx="70" cy="80" r="6"/><circle class="frost" cx="160" cy="58" r="5"/>
+<rect class="frost" x="280" y="200" width="168" height="40"/>
+<rect class="patina" x="280" y="144" width="40" height="40"/>
+<circle class="star" cx="344" cy="60" r="2"/><circle class="star" cx="396" cy="92" r="1.5"/><circle class="star" cx="440" cy="48" r="2.5"/><circle class="star" cx="372" cy="128" r="1.5"/><circle class="star" cx="424" cy="150" r="1.2"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">DEEPWELL</h1>
+<p class="tag">深井国的设计系统。极夜、星空、仪器与书页。</p>
+</div>
+</div>
+</body>
+</html>

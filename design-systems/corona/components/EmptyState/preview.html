@@ -1,0 +1,12 @@
+<!-- @dsCard group="反馈 Feedback" height=400 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>EmptyState — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.EmptyState, { title: '这页还没记下任何东西。', action: h(P.Button, { variant: 'primary' }, '接入第一颗卫星') }, '接入一台旧设备，我就开始记。手机、平板、开发板，甚至一块停走的手表都行。'));
+</script>
+</body>
+</html>

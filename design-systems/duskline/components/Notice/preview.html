@@ -1,0 +1,12 @@
+<!-- @dsCard group="声音 Voice" height=420 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Notice — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Notice, { speaker: 'tally', urgent: true, actions: h(P.Button, { size: 'sm' }, '重试 Retry') }, '请求未送达。误差 1 次。已重新排队，预计 3 秒。'), h(P.Notice, { speaker: 'kite' }, '三封新消息，刚从屋顶扔下来的。'), h(P.Notice, { speaker: 'ophelia' }, '已盖章。她没有笑，但盖得很用力。')));
+</script>
+</body>
+</html>

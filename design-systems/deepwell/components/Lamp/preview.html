@@ -1,0 +1,12 @@
+<!-- @dsCard group="状态 Status" height=80 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Lamp — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Lamp, null, '断电 Off'), h(P.Lamp, { tone: 'patina' }, '运行 Online'), h(P.Lamp, { tone: 'copper' }, '检修 Service'), h(P.Lamp, { tone: 'alarm' }, '过热 Overheat'), h(P.Lamp, { tone: 'frost' }, '同步 Sync')));
+</script>
+</body>
+</html>

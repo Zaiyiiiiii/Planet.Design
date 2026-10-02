@@ -1,0 +1,124 @@
+/* Generated from tokens.json — PLANET design tokens. */
+
+@font-face { font-family: 'Big Shoulders'; src: url('fonts/BigShoulders-Latin-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'ZCOOL QingKe HuangYou'; src: url('fonts/ZCOOLQingKeHuangYou.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Newsreader'; src: url('fonts/Newsreader-Latin-Variable.woff2') format('woff2'); font-weight: 200 800; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Newsreader'; src: url('fonts/Newsreader-Latin-Variable-Italic.woff2') format('woff2'); font-weight: 200 800; font-style: italic; font-display: swap; }
+
+@font-face { font-family: 'Courier Prime'; src: url('fonts/CourierPrime-Latin-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Courier Prime'; src: url('fonts/CourierPrime-Latin-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Alfa Slab One'; src: url('fonts/AlfaSlabOne-Latin-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Monoton'; src: url('fonts/Monoton-Latin-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+:root, [data-theme="night"] {
+  --void: #1b1316;
+  --smog: #251a1e;
+  --raised: #30232a;
+  --line: #4a363d;
+  --line-strong: #8a7078;
+  --ink: #f3e6d8;
+  --ink-muted: #bfa99c;
+  --neon: #3fd8c4;
+  --neon-soft: #0f3330;
+  --on-neon: #08201d;
+  --signal: #8fb0ff;
+  --signal-soft: #18244a;
+  --brass: #d9a35c;
+  --brass-soft: #3a2614;
+  --on-brass: #1c1108;
+  --sign: #ff6f8e;
+  --sign-soft: #431722;
+  --paper: #efe0c4;
+  --paper-ink: #2a1a12;
+  --paper-rust: #9a3412;
+  --moss: #8fe0a6;
+  --moss-soft: #12301f;
+  --ember: #ff8a4c;
+  --ember-soft: #41190a;
+  --survey: #8aa8e0;
+  --survey-soft: #172a47;
+  --focus-ring: var(--signal);
+  --link: var(--signal);
+  --faction-agency: var(--brass);
+  --faction-survey: var(--survey);
+  --faction-union: var(--neon);
+  --faction-sunward: #f0905a;
+  --faction-choir: var(--moss);
+  --faction-exchange: #e88a96;
+  --faction-couriers: #4fc9b8;
+  --faction-consulate: #a9c6e0;
+  --shadow-print: 4px 4px 0 #0c0709;
+  --glow-neon: 0 0 12px rgba(63,216,196,0.6);
+  --glow-signal: 0 0 10px rgba(143,176,255,0.55);
+  --glow-sign: 0 0 12px rgba(255,111,142,0.6);
+}
+
+[data-theme="daylight"] {
+  --void: #ecdfcd;
+  --smog: #f5ead9;
+  --raised: #fbf4e8;
+  --line: #d8c6b0;
+  --line-strong: #8a6f66;
+  --ink: #2a1a16;
+  --ink-muted: #6a5048;
+  --neon: #0a6c63;
+  --neon-soft: #cdeee8;
+  --on-neon: #f2fffc;
+  --signal: #2b4fa8;
+  --signal-soft: #d8e1f6;
+  --brass: #7a4e12;
+  --brass-soft: #f0dcb8;
+  --on-brass: #fff6e6;
+  --sign: #b0234a;
+  --sign-soft: #f8d6de;
+  --paper: #efe0c4;
+  --paper-ink: #2a1a12;
+  --paper-rust: #9a3412;
+  --moss: #1f6b45;
+  --moss-soft: #d4ecd9;
+  --ember: #a8380f;
+  --ember-soft: #f6d9c8;
+  --survey: #2a4a86;
+  --survey-soft: #d3dcee;
+  --focus-ring: var(--signal);
+  --link: var(--signal);
+  --faction-agency: var(--brass);
+  --faction-survey: var(--survey);
+  --faction-union: var(--neon);
+  --faction-sunward: #9a4212;
+  --faction-choir: var(--moss);
+  --faction-exchange: #7e2433;
+  --faction-couriers: #0d6358;
+  --faction-consulate: #285f75;
+  --shadow-print: 4px 4px 0 #c9b49a;
+  --glow-neon: 0 0 0 rgba(0,0,0,0);
+  --glow-signal: 0 0 0 rgba(0,0,0,0);
+  --glow-sign: 0 0 0 rgba(0,0,0,0);
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-0: 0px;
+  --radius-ring: 999px;
+  --cut-sm: 6px;
+  --cut-md: 12px;
+  --cut-lg: 24px;
+  --font-display: "Alfa Slab One", "ZCOOL QingKe HuangYou", Rockwell, serif;
+  --font-label: "Big Shoulders", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-neon: Monoton, "ZCOOL QingKe HuangYou", sans-serif;
+  --font-serif: Newsreader, "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, Georgia, serif;
+  --font-mono: "Courier Prime", "Noto Serif SC", "Songti SC", "Courier New", monospace;
+}

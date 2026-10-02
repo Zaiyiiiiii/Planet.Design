@@ -1,0 +1,71 @@
+/* Generated from tokens.json — PLANET design tokens. */
+
+@font-face { font-family: 'Chivo'; src: url('fonts/Chivo-Latin-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Chivo Mono'; src: url('fonts/ChivoMono-Latin-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Cinzel'; src: url('fonts/Cinzel-Latin-Variable.woff2') format('woff2'); font-weight: 400 900; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'EB Garamond'; src: url('fonts/EBGaramond-Latin-Variable.woff2') format('woff2'); font-weight: 400 800; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'EB Garamond'; src: url('fonts/EBGaramond-Latin-Variable-Italic.woff2') format('woff2'); font-weight: 400 800; font-style: italic; font-display: swap; }
+
+:root, [data-theme="deep"] {
+  --night: #0b1018;
+  --iron: #141b24;
+  --iron-raised: #1c2531;
+  --seam: #2c3746;
+  --seam-strong: #6c7d90;
+  --ink: #e8eef4;
+  --ink-muted: #9fb0c0;
+  --copper: #e58e55;
+  --copper-soft: #3a2010;
+  --on-copper: #140a04;
+  --frost: #9fd4f0;
+  --frost-soft: #122a3a;
+  --patina: #74c7a8;
+  --patina-soft: #10302a;
+  --alarm: #ff6b6b;
+  --alarm-soft: #3d1214;
+  --on-alarm: #140506;
+  --warn: #f0b860;
+  --on-warn: #141005;
+  --brass: #d6aa5c;
+  --star: #f4f1e6;
+  --grid: rgba(159,212,240,0.07);
+  --heat-0: #24384c;
+  --heat-1: #4a3a4a;
+  --heat-2: #9a4a2a;
+  --heat-3: #e58e55;
+  --heat-4: #ffd38a;
+  --focus-ring: var(--frost);
+  --link: var(--frost);
+  --faction-agency: #e3a33b;
+  --faction-survey: #8aa8d8;
+  --faction-union: #ff7a5c;
+  --faction-sunward: #e8854a;
+  --faction-choir: #9fd67e;
+  --faction-exchange: #e07a88;
+  --faction-couriers: #4fc9b8;
+  --faction-consulate: #9cc3d5;
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-0: 0px;
+  --border-plate: 1px;
+  --shadow-plate: inset 0 1px 0 0 rgba(200,220,255,0.06);
+  --plate-bar: 6px;
+  --plate-bar-thin: 3px;
+  --draft-offset: 6px;
+  --font-plate: Cinzel, "Noto Serif SC", "Songti SC", serif;
+  --font-text: "EB Garamond", "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  --font-mono: "Chivo Mono", "Noto Sans SC", monospace;
+}

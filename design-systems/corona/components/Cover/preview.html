@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>CORONA</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--pearl); color:var(--ink); font-family:var(--font-text); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .space { fill:var(--space); } .sun { fill:var(--corona); } .lagoon { fill:var(--lagoon); } .tint { fill:var(--corona-soft); } .moon { fill:var(--ink); }
+  .orbit { fill:none; stroke:var(--on-space); stroke-width:1; stroke-opacity:.35; }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:76px; line-height:.95; font-weight:300; letter-spacing:-.01em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:22px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      space 208×240 slab (radius-lg) with the corona star rising inside it · lagoon pill 240×56 · corona-soft pill 160×56 · five ink/corona moons — about 40% of 960×288
+  arrangement one tall porthole slab with satellites to its right, tops aligned at space-5, space-4 gutters
+  pattern     "soft, rounded, large radii → discs and pills" plus the literal motif of the rising star: two orbit arcs inside the porthole, a row of five moons at a space-6 pitch
+  scales      pill height space-7+space-2 (56) with rx half of it; slab radius-lg (28); gutters space-4; moon pitch space-6
+-->
+<defs><clipPath id="porthole"><rect x="0" y="24" width="208" height="240" rx="28"/></clipPath></defs>
+<rect class="space" x="0" y="24" width="208" height="240" rx="28"/>
+<g clip-path="url(#porthole)">
+<circle class="orbit" cx="104" cy="300" r="148"/>
+<circle class="orbit" cx="104" cy="300" r="188"/>
+<circle class="sun" cx="104" cy="300" r="104"/>
+</g>
+<rect class="lagoon" x="224" y="24" width="256" height="56" rx="28"/>
+<rect class="tint" x="224" y="96" width="160" height="56" rx="28"/>
+<circle class="moon" cx="240" cy="216" r="8"/>
+<circle class="moon" cx="272" cy="216" r="8"/>
+<circle class="sun" cx="304" cy="216" r="8"/>
+<circle class="moon" cx="336" cy="216" r="8"/>
+<circle class="moon" cx="368" cy="216" r="8"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">CORONA</h1>
+<p class="tag">日冕诸城的设计系统。阳光从不落下。</p>
+</div>
+</div>
+</body>
+</html>

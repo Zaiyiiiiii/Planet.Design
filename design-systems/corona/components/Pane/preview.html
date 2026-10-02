@@ -1,0 +1,12 @@
+<!-- @dsCard group="内容 Content" height=260 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Pane — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.Pane, { title: '存储穹顶', meta: '书房的旧平板 · 2 分钟前同步', status: h(P.Chip, { tone: 'bloom' }, '在线'), actions: h(React.Fragment, null, h(P.Button, { size: 'sm', variant: 'primary' }, '打开'), h(P.Button, { size: 'sm' }, '设置')) }, h('p', null, '212 GB 的照片和文档，同时保存在另外两颗卫星上。')));
+</script>
+</body>
+</html>

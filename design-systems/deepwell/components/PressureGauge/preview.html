@@ -1,0 +1,12 @@
+<!-- @dsCard group="深井特色 Deepwell" height=250 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>PressureGauge — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.PressureGauge, { value: 46, reading: 4.6, readoutUnit: ' MPa', unit: 'MPa', max: 10, label: '一号锅炉' }), h(P.PressureGauge, { value: 88, reading: 8.8, readoutUnit: ' MPa', unit: 'MPa', max: 10, label: '七号地热井' })));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextField — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.TextField, { label: '目击者姓名 Witness', placeholder: '例如：玛格·奥瑞', hint: '写全名。测绘局按姓氏归档。' }), h(P.TextField, { label: '案发时间 Time of incident', defaultValue: '25:61', error: '时间格式应为 HH:MM，例如 03:12。' })));
+</script>
+</body>
+</html>

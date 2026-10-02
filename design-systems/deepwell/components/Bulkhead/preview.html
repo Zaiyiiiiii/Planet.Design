@@ -1,0 +1,12 @@
+<!-- @dsCard group="内容 Content" height=250 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Bulkhead — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(P.Bulkhead, { code: 'SH-07', title: '七号地热井', status: h(P.Lamp, { tone: 'copper' }, '降温中') }, h('p', null, '上一次陨石撞击震裂了井壁的一道焊缝。昼夜三班在修。'), h('p', { className: 'pl-readout' }, 'T 412°C · P 3.2 MPa · 卫星节点 3'), h(P.Button, { size: 'sm' }, '巡检日志')));
+</script>
+</body>
+</html>

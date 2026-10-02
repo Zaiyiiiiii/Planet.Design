@@ -1,0 +1,12 @@
+<!-- @dsCard group="标志 Brand" height=560 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Logo — preview</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render((function () { var SATS = [ { id: 1, name: '旧闹钟', status: 'ok' }, { id: 2, name: '书房的旧平板', status: 'done' }, { id: 3, name: '开发板 RX-7', status: 'busy' }, { id: 4, name: '停走的手表', status: 'sleep' }, { id: 5, name: '聊天备份', status: 'error' } ]; return h('div', { style: { padding: 24 } }, h('div', { style: { display: 'flex', alignItems: 'flex-end', gap: 28, flexWrap: 'wrap' } }, [200, 96, 64, 48].map(function (s) { return h('figure', { key: s, style: { margin: 0, textAlign: 'center' } }, h(P.Logo, { size: s, satellites: SATS }), h('figcaption', { style: { fontSize: 12, opacity: .7 } }, s + 'px')); })), h('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 20, marginTop: 24 } }, [['idle','待命'],['listening','倾听'],['thinking','思考'],['success','成功'],['error','出错'],['sleep','睡着']].map(function (s) { return h('figure', { key: s[0], style: { margin: 0, textAlign: 'center' } }, h(P.Logo, { size: 120, state: s[0], satellites: SATS }), h('figcaption', { style: { fontSize: 13, opacity: .8 } }, s[1])); }))); })());
+</script>
+</body>
+</html>

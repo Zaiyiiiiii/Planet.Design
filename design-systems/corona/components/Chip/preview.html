@@ -1,0 +1,12 @@
+<!-- @dsCard group="状态 Status" height=90 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Chip — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetCorona, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Chip, null, '休眠'), h(P.Chip, { tone: 'corona' }, '充能中'), h(P.Chip, { tone: 'lagoon' }, '同步中'), h(P.Chip, { tone: 'bloom' }, '在线'), h(P.Chip, { tone: 'flare' }, '离线')));
+</script>
+</body>
+</html>

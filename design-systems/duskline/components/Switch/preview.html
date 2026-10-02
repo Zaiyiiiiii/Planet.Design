@@ -1,0 +1,12 @@
+<!-- @dsCard group="表单 Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Switch — preview</title></head>
+<body>
+<div id="root" class="pl-stack"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Switch, { label: '自动同步 Auto sync', hint: '每 5 分钟把新副本送到其他卫星。', defaultChecked: true }), h(P.Switch, { label: '离线时保留副本', hint: '断网时先存在本机，恢复后再补发。' }), h(P.Switch, { label: '夜间推送', hint: '小飞会在凌晨把消息扔到屋顶。', defaultChecked: true, onLabel: '推送中', offLabel: '已暂停' }), h(P.Switch, { label: '远程唤醒 Wake on LAN', disabled: true, hint: '这台设备不支持。' })));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="数据 Data" height=250 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ThermalGauge — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.PlanetDeepwell, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.ThermalGauge, { value: 64, reading: 412, unit: '°C', label: '井壁温度' }), h(P.ThermalGauge, { value: 22, reading: 38, unit: '°C', label: '居住层' }), h(P.ThermalGauge, { value: 95, reading: 611, unit: '°C', label: '热核心' })));
+</script>
+</body>
+</html>

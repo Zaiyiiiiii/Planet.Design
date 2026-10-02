@@ -1,0 +1,12 @@
+<!-- @dsCard group="操作 Actions" height=340 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Menu — preview</title></head>
+<body>
+<div id="root" class="pl-row"></div>
+<script>
+  var P = window.Planet, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null, h(P.Menu, { label: '书房的旧平板', defaultOpen: true, items: [ { label: '立即同步', icon: 'sync', shortcut: 'Ctrl S' }, { label: '查看副本', icon: 'eye' }, { label: '更换密钥', icon: 'key' }, { label: '远程唤醒', icon: 'satellite', disabled: true }, { separator: true }, { label: '移除这颗卫星', icon: 'close', danger: true } ] }), h('span', { style: { display: 'inline-block', width: 120 } }), h(P.Menu, { label: '排序', variant: 'ghost', items: [ { label: '按名称' }, { label: '按最近同步' }, { label: '按存储大小' } ] })));
+</script>
+</body>
+</html>
