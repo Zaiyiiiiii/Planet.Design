@@ -484,8 +484,8 @@ body { font-size: 17px; line-height: 27px;
 @media (max-width: 520px) { .pl-as { flex-direction: column; align-items: flex-start; } .pl-as-bubble { margin-bottom: 0; } }
 
 /* Hairspring — a pocket astrolabe with a lens for an eye; satellites tick round like a second hand */
-.pl-as-hairspring { --as-ease: steps(60); --as-dur: 60s; }
-.pl-as-hairspring.pl-as-st-thinking { --as-dur: 12s; } .pl-as-hairspring.pl-as-st-sleep { --as-dur: 240s; } .pl-as-hairspring.pl-as-st-listening { --as-dur: 40s; } .pl-as-hairspring.pl-as-st-success { --as-dur: 30s; }
+.pl-as-hairspring { --as-ease: linear; --as-dur: 72s; }
+.pl-as-hairspring.pl-as-st-thinking { --as-dur: 24s; } .pl-as-hairspring.pl-as-st-sleep { --as-dur: 200s; } .pl-as-hairspring.pl-as-st-listening { --as-dur: 96s; } .pl-as-hairspring.pl-as-st-success { --as-dur: 40s; }
 .pl-as-hairspring .pl-as-core { animation: none; }
 .pl-as-hairspring.pl-as-st-success .pl-as-core { animation: pl-as-hop .9s cubic-bezier(.3,1.6,.5,1) 1; }
 .pl-as-hairspring.pl-as-st-error .pl-as-core { animation: pl-as-shake .4s ease-in-out 1; }
@@ -494,7 +494,8 @@ body { font-size: 17px; line-height: 27px;
 .pl-as-hairspring .pl-as-orb { fill: var(--iron-raised); }
 .pl-as-hairspring .pl-as-ticks { stroke: var(--star); stroke-width: .9; opacity: .7; }
 .pl-as-hairspring .pl-as-rete { fill: none; stroke: var(--brass); stroke-width: .9; opacity: .8; transform-box: view-box; transform-origin: 0 0; }
-.pl-as-hairspring.pl-as-st-thinking .pl-as-rete { animation: pl-as-spin 4s steps(24) infinite; }
+.pl-as-hairspring .pl-as-rete { animation: pl-as-spin 180s linear infinite; }
+.pl-as-hairspring.pl-as-st-thinking .pl-as-rete { animation-duration: 16s; }
 .pl-as-hairspring .pl-as-spring { fill: none; stroke: var(--gilt); stroke-width: .8; opacity: .8; }
 .pl-as-hairspring .pl-as-lens { fill: var(--star); }
 .pl-as-hairspring .pl-as-iris { fill: var(--night); transform-box: fill-box; transform-origin: center; transition: transform .3s ease; }
